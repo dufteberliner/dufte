@@ -1,0 +1,1491 @@
+﻿@charset "utf-8";
+/* CSS Document 
+
+Dufte Berliner Produkte UG 2013
+Stand: 06.05.2013
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}  
+p {
+margin:0px; 
+}
+#active {
+	color:#46ac59;
+	background-color:#dad5d5;
+}
+
+
+body {
+	margin:0;
+	padding:0;
+	color: #666666;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+}
+
+ul {
+	margin-left: 15px;
+	margin-bottom: 0px;
+}
+
+li {
+	margin-bottom: 0px;
+}
+
+.li_box {
+	margin-left: -25px;
+	margin-bottom: 3px;
+}
+
+#shop_headline {
+	padding-bottom:50px;
+}
+
+#shop_left_col {
+	float:left;
+	width:210px;
+	height:auto;
+}
+
+#shop_gap {
+	width:50px;
+	height:10px;
+	float:left;
+}
+
+#shop_right_col {
+	float:left;
+	margin-left:20px;
+	width:210px;
+	height:auto;
+}
+
+img {
+	border:none;
+}
+.gecko .e_img{ 
+padding-top:9px;
+}
+.win.ie8 .e_img {
+padding-top:14px;
+}
+.win.ie9 .e_img {
+padding-top:14px;
+}
+.ie .e_img {
+padding-top:14px;
+}
+
+.webkit .e_img {
+padding-top:9px;
+}
+.e_img{
+	padding-top:9px !important;
+	padding-top:14px;
+}
+
+#pb_img img {
+padding-top:2px;
+	width:50%;
+	height:50%;
+	border:1px solid #cccccc;
+}
+
+#pb_main_img img {
+	padding-top:2px;
+	width:50%;
+	height:50%;
+	 border:1px solid #cccccc;
+}
+
+h1 {
+	font-size: 21px;
+	padding-bottom:29px;
+	display: inline;
+	color: #4D4F53; 
+	column-span: all; 
+	-moz-column-span: all;
+	-webkit-column-span: all;
+}
+
+h2 {
+	font-size: 17px;
+	padding-bottom:25px;
+	display: inline;
+	color: #4D4F53;
+	column-span: all;
+	-moz-column-span: all;
+	-webkit-column-span: all;
+}
+
+/* Navigations Headline */
+h3 {
+	font-size: 14px;
+	padding-bottom:20px;
+	font-weight: bold;
+	display: inline;
+	color: #4D4F53;
+	margin-left: 9px;
+	column-span: all;
+	-moz-column-span: all;
+	-webkit-column-span: all;
+}
+
+h4 {
+	font-size: 11px;
+	font-weight: bold;
+	display: inline;
+	color: #4D4F53;
+	column-span: all;
+		-moz-column-span: all;
+	-webkit-column-span: all;
+}
+
+
+h5 {
+-ms-break-before: column;
+break-before: column; /* W3C */
+-webkit-column-break-before: column; /* Safari & Chrome */
+-ms-column-break-before: column; /* Internet Explorer */
+-o-column-break-before: column; /* Opera */
+}
+
+/* Links */
+
+a {
+	text-decoration: none;
+	color: #666666;
+	border:0;
+}
+a:hover {
+	text-decoration: none;
+	color: #46ac59;
+	border:0;
+}
+
+a:focus {
+	text-decoration: none;
+	color: #46ac59; /* grün */
+	border:0;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #666666; /* grau */
+	border:0;
+}
+
+a:active {
+	text-decoration: none;
+	color: #46ac59;
+	border:0;
+}
+
+a.footer {
+	text-decoration: none;
+	color: #ffffff;
+	border:0;
+}
+a.footer:hover {
+	text-decoration: none;
+	color: #46ac59;
+	border:0;
+}
+
+a.footer:focus {
+	text-decoration: none;
+	color: #46ac59; /* grün */
+	border:0;
+}
+
+a.footer:visited {
+	text-decoration: none;
+	color: #ffffff; /* grau */
+	border:0;
+}
+
+a.footer:active {
+	text-decoration: none;
+	color: #46ac59;
+	border:0;
+}
+
+a.header_menu {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.header_menu:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.link_arrow {
+	text-decoration: none;
+	padding-left: 10px;
+	background-image: url('../theme/images/arrow.gif');
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+
+a.backlink {
+	text-decoration: none;
+	padding-left: 10px;
+	background-image: url('../theme/images/arrow_back.gif');
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+
+a.link_arrow:hover {
+	text-decoration: none;
+	background-color: #f2f2f2;
+}
+
+a.main_menu {
+	font-weight: bold;
+	font-size: 14px;
+	color: #4D4F53;
+	text-decoration: none;
+	margin: 0px;
+	margin-left: 10px;
+	padding: 5px 10px;
+	line-height: 30px;
+}
+
+a.main_menu:hover {
+	color: #46ac59;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 5px 10px;
+}
+
+a.main_menu:active {
+	color: #46ac59;
+	text-decoration: none;
+	margin-left: 10px;
+	padding: 5px 10px;
+}
+
+/* Formulare */
+
+input, textarea, select {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #454545;
+	/* margin-top:5px; */
+}
+
+
+input.text_bgImage {
+	width: 149px; /* entspricht Grafikbreite */
+	height: 24px; /* entspricht Grafikhöhe */
+	background-image: url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/suchfeld.jpg'); /* Hintergrundgrafik */
+	border: 0; /* Elementrahmen deaktivieren */
+	padding: 0; /* Innenabstand */
+	margin: 0 0 8px 217px;
+	vertical-align: bottom;
+}
+
+.btn_warenkorb {
+	background:transparent url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/warenkorb_btn.png') 0 0 no-repeat;
+	width:195px;
+	height:34px;
+	border: 0;
+	border: 0px;
+}
+
+.btn_search {
+	background-image: url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/btn_search.jpg');
+	width:23px;
+	height:24px;
+	border: 0;
+	background-repeat: no-repeat;
+	border: 0px;
+	bottom:5px;
+	color: #666666;
+	font-weight: bold;
+	cursor:pointer;
+	margin: 0 0 8px;
+	padding:0;
+}
+
+.btn_newsletter {
+	background-color: #000000;
+	vertical-align:middle;
+	width:135px;;
+	height:28px;
+	border: 0px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size:11px;
+	cursor:pointer;
+}
+
+.newsletter_bg{
+	background-image: url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/emotion.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	width:125px;
+	height:60px;
+	position:absolute;
+	left:28px;
+	top:59px;
+}
+
+.cart_btn{
+	position:absolute;
+	top:120px;
+	left:10px;
+	cursor:pointer;
+}
+
+.newsletter_btn{
+	position:absolute;
+	top:290px;
+	left:10px;
+	cursor:pointer;
+}
+
+.cart_full{
+	position:absolute;
+	top:120px;
+	left:10px;
+}
+
+.servbtn {
+	position:relative;
+	left:4px;
+	cursor:pointer;
+	margin-top:4px;
+}
+
+.btn_productlist {
+	background:transparent url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/produkt_btn.png') 0 0 no-repeat;
+	border-style:none;
+	width: 161px;
+	height:34px;
+	border: 0px;
+	font-weight: bold;
+	margin-top: 5px;
+	cursor:pointer;
+}
+
+.btn_plist_1 {
+	background:transparent url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/produkt_btn.png') 0 0 no-repeat;
+	border-style:none;
+	width: 161px;
+	height:34px;
+	border: 0px;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+.input_error {
+	border: 2px solid #FF0000;
+}
+
+
+/* Vom System benötigt */
+
+.small {
+	font-size: 11px;
+	color: #AAAAAA;
+}
+
+.strike {
+	color: #FF0000;
+}
+
+.default_color {
+	color: #454545;
+}
+
+
+/* Sonstiges */
+
+.color {
+	color: #CB7B4A;
+}
+
+.msg_error {
+	color: #FF0000;
+	padding: 5px;
+	padding-left: 10px;
+	background-color: #FFE5E5;
+}
+
+.msg_done {
+	color: #169D00;
+	padding: 5px;
+	padding-left: 10px;
+	background-color: #D0EBCC;
+}
+
+.box_header {
+	padding: 2px;
+	padding-left: 10px;
+	border:#000000;
+	border-style:solid;
+	border:1px;
+	background: {config.colors.box_header};
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 3px;
+}
+
+.box_body {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	padding: 0 10px 10px;
+	background: #ffffff;
+}
+
+.box_right {
+	position:relative;
+	top:390px;
+	right:453px;
+	border:#cccccc solid 1px;
+	width:150px;
+	padding: 10px;
+	background: #ffffff;
+}
+
+.box_news_inactive {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	background-image: url("http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/news_bg.jpg");
+	background-repeat:no-repeat;
+	/* border:#cccccc solid 1px; */
+	width:150px;
+	height:170px;
+	/* padding: 10px; */
+}
+
+div.box_cart:hover {border:2px solid #ffffff;}
+div.box_cart a {
+  display: block;
+  text-decoration: none;
+}
+
+div.empty_box_cart:hover {outline:2px solid #ffffff;}
+div.empty_box_cart a {
+  display: block;
+  text-decoration: none;
+}
+
+.box_news {
+	width:180px;
+	height:180px;
+}
+div.box_news:hover {outline:2px solid #ffffff;}
+div.box_news a {
+  display: block;
+  text-decoration: none;
+}
+
+
+.box_cart {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	background-image: url("http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/full_cart_bg.jpg");
+	background-repeat:no-repeat;
+	width: 150px;
+	height:170px;
+	padding: 20px;
+}
+
+.empty_box_cart {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	background-image: url("http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/empty_cart_bg.jpg");
+	background-repeat:no-repeat;
+	width: 150px;
+	height:170px;
+	padding: 20px;
+}
+
+.desc {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width:420px;
+	height:auto;
+	float:left;
+	text-align:justify;
+	padding-left:30px;
+}
+
+.details {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width:300px;
+	height:auto;
+	float:left;
+	padding-left: 22px;
+}
+
+#box_pl_i_1{
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	position:relative;
+	width:178px; 
+	height:704px; 
+	float:left; 
+	margin:2px;
+	margin-left:10px;
+}
+
+#box_pl_i_2{
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	position:relative;
+	width:750px; 
+	height:auto; 
+	float:left; 
+	margin:2px 2px 40px 0px;
+}
+
+.crossselling1 {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	float:left;
+	width:176px;
+	height:700px;
+	margin-left:10px;
+	margin-top:2px;
+	position:absolute;
+	right:20px;
+	top:600px; /* vorher 560 */
+}
+
+.crossselling2 {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width:760px;
+	height:235px;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+.box_index_angebot {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	float: left;
+	height: 154px;
+	width: 372px;
+}
+
+.box_slidebanner {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	border: 1px solid #CCCCCC;
+	width:748px;
+	height:152px;
+}
+
+.box_product_mid {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width:350px;
+	float:left;
+	margin-top:1px;
+}
+
+.box_product_midr {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	margin-left:70px; /* vorher 30 */
+	float:left;
+	width:295px;
+}
+	
+.box_cell {
+	margin-bottom: 7px;
+}
+
+#product_list_main{
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	float: left;
+	height: auto;
+	width: 750px;
+	margin-top:12px;
+}
+
+div.box_product_list:hover {border:1px inset #da0000;}
+div.box_product_list a {
+  display: block;
+  text-decoration: none;
+}
+div.box_product_list_2:hover {border:1px inset #da0000;}
+div.box_product_list_2 a {
+  display: block;
+  text-decoration: none;
+}
+
+div.product_list_1:hover {border:1px inset #da0000;}
+div.product_list_1 a {
+  display: block;
+  text-decoration: none;
+}
+
+.box_product_list {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 178px;
+	height: 255px;
+	position: relative;
+	float: left;
+	padding: 1px;
+}
+
+.product_list_0 {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 175px;
+	height: 221px;
+	margin-top:1px;
+	position: relative;
+	float: left;
+	padding: 1px;
+}
+
+.product_list_1 {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 175px;
+	height: 235px;
+	position: relative;
+	float: left;
+	margin:5px 5px 20px;
+	padding: 1px;
+}
+
+.box_product_list_2 {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 175px;
+	height: 255px;
+	position: relative;
+	float: left;
+	padding: 1px;
+}
+
+.box_product {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	float: left;
+	max-height: 100px;
+	width:auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-bottom:3px;
+	width: 175px;
+}
+
+.box_product img {
+	max-height: 100px;
+	margin-top:2px;
+	width:auto;
+}
+
+.box_product2 img {
+	margin-top:2px;
+	max-height: 100px;
+	width:auto;
+}
+
+.box_product2 {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	max-height: 100px;
+	width:auto;
+	float:left;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-bottom:3px;
+	width: 175px;
+}
+
+.box_plist_text_1 {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	float: left;
+	height: 46px;
+	width: 175px;
+	margin: 0 auto;
+	position:absolute;
+	bottom:70px;
+}
+
+.box_producttext {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	float: left;
+	height: 46px;
+	width: 175px;
+	margin: 0 auto;
+	position:absolute;
+	top:120px;
+}
+
+.box_productpreis {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	float: left;
+	height: 26px;
+	width: 175px;
+	margin: 0 auto;
+	position:absolute;
+	top:153px;
+}
+
+.box_productpreis_ref {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	float: left;
+	height: auto;
+	width: 175px;
+	margin: 0 auto;
+	position:absolute;
+	top:138px;
+}
+
+.box_productbtn {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 175px;
+	height:39px;
+	position: absolute;
+	bottom: 20px;
+	left:0;
+}
+
+.box_sidebtn {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 175px;
+	float:left;
+	height:39px;
+	left:0;
+	position:absolute;
+	bottom: 10px;
+}
+
+.price {
+	font-weight: bold;
+	font-size: 16px;
+	color: #4ea154;
+}
+
+.price_ps {
+	font-weight: bold;
+	font-size: 21px;
+	color: #4ea154;
+}
+
+
+.light_grey {
+	color: #AAAAAA;
+}
+
+.box_service {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	background-image: url("http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/partner_bg.jpg");
+	background-repeat:no-repeat;
+	width:147px;
+	height:198px;
+}
+
+.text_arrow {
+	padding-left: 10px;
+	background-image: url('../theme/images/arrow.gif');
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+
+.product_review_flop {
+	background-image: url('../theme/images/star_flop.gif');
+	background-repeat: repeat-x;
+	text-align: left;
+	width: 110px;
+	height: 19px;
+}
+
+.product_review_top {
+	background-image: url('../theme/images/star_top.gif');
+	background-repeat: repeat-x;
+	height: 19px;
+	overflow: hidden;
+}
+
+.chargroup {
+	padding: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #FFFFFF;
+	background: #81BEE1;
+	font-size: 15px;
+}
+
+.hr_grey {
+	background: none repeat scroll 0 0 #CCCCCC;
+	height: 1.5px;
+	margin-bottom: 5px;
+	max-width: 750px;
+}
+
+.cart_line {
+	border-top: 1px solid #cccccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Container */
+
+#frame {
+	width: 960px;
+	position:relative;
+	padding: 40px 10px 10px;
+	margin: auto;
+	vertical-align:middle;
+	/* overflow:auto; */ 
+	background-color: #FFFFFF;
+}
+
+#header {
+	background: #ffffff;
+	width: 960px;
+	height: 105px;
+	padding: 0px;
+}
+
+#header #logo {
+	font-size: 22px;
+	font-weight: bold;
+	color: #000000;
+	height: 70px;
+}
+
+#header #menu {
+	color: #FFFFFF;
+	text-align: right;
+	width: 600px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 340px;
+}
+
+#menu_bar {
+	background-image:url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/nav_bg.png');
+	background-repeat:no-repeat;
+	letter-spacing:1px;
+	width: 100%;
+	height: 32px;
+	margin-top: 3px;
+}
+
+.menu_bar {
+	background-image:url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/nav_bg.jpg');
+	background-repeat:repeat-x;
+	letter-spacing:1px;
+	width: 100%;
+	height: 32px;
+	margin-top: 3px;
+}
+
+#menu_produkt_bar {
+	background: #000000;
+	width: 760px;
+	height: 32px;
+	margin-top: 3px;
+}
+
+#skyline {
+	height: 100px;
+	max-width: 960px;
+	z-index: 1;
+}
+
+#footer {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	background: #000000;
+	background-image:url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/banner_black.jpg');
+	background-repeat: no-repeat;
+	height: auto;
+	width: 960px;
+	position:relative;
+	padding-right: 15px;
+	/* padding-top: 15px; */
+}
+
+#footer_all {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	position:relative;
+		height: auto;
+	width: 930px;
+}
+
+.footer_menu {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width:920px;
+}
+
+#breadcrumb {
+	width: 940px;
+	padding: 10px;
+}
+
+#hr_breadcrumb {
+	background: #ffffff;
+	width: 960px;
+	height: 5px;
+}
+
+.hr_breadcrumb {
+	background: #ffffff;
+	width: 960px;
+	height: 5px;
+}
+
+.blog_post {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 599px;;
+	height: auto;
+	text-align: left;  
+	margin-left: 6px;
+	margin-right: 10px;
+	float: left;
+}
+
+/* 3 Spalten */
+
+#column_left {
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+.banner_left {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 176px;
+	height: 550px;
+	float: left;
+}
+
+.banner_left_cat {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 176px;
+	height: 552px;
+	float: left;
+}
+
+#content {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	float:left;
+	width:750px;
+	height:auto;
+	}
+
+#column_middle {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 748px;
+	height: 412px; 
+	float: left;
+}
+
+#column_content {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	/* border: 1px solid #cccccc; */
+	width: 599px;;
+	height: auto;
+	text-align: left;  
+	margin-left: 4px;
+	margin-right: 10px;
+	float: left;
+}
+
+#column_middle_2 {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	/* border: 1px solid #cccccc; */
+	width: 750px;;
+	max-height: 380px;
+	text-align: left;  
+	margin-bottom:0px; /* vorher 15 */
+	float: left;
+}
+
+#column_right {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	position: absolute;
+	float:right;
+	right: 10px;
+	top:154px;
+	width: 150px;
+	height: 400px;
+}
+
+#index_main{
+	float:left; 
+	height:auto; 
+	width:750px;
+	margin-top:-15px;
+}
+
+.grey_border{
+	border:#575757 solid 1px;
+}
+
+/* Warenkorb */
+
+#cart_content{
+	width:590px;
+	height:auto;
+	float:left;
+}
+
+
+.clear {
+	clear: left;
+}
+
+.spacer {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	height: 5px;
+	margin: 0px;
+}
+
+.spacer_f {
+	height: 25px;
+	margin: 0px;
+}
+
+.spacer_h33 {
+	height: 36px;
+	margin: 0px;
+}
+
+.spacer_h22 {
+	height: 22px;
+	margin: 0px;
+}
+.spacer_b25 {
+	width: 25px;
+	margin: 0px;
+}
+
+.spacer_h82 {
+	height: 82px;
+	margin: 0px;
+}
+
+/*** Menüstruktur ***/
+
+/* Kategorien */
+
+.nav_side {
+	padding-bottom: 10px;
+}
+.nav_side a {
+	background-image: url("../theme/images/arrow.gif");
+	background-position: -10px 7px;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #E7E7E7;
+	color: #999999;
+	display: block;
+	font-size: 14px;
+	overflow: hidden;
+	padding: 5px 5px 5px 10px;
+	transition: background-position 0.2s ease 0s;
+}
+.nav_side a:hover {
+	background-color: #F2F2F2;
+	color: #000000;
+}
+.nav_side .active {
+	color: #000000;
+}
+
+.menu_level_1 a:hover, .menu_level_1 .active {
+	background-color: #F2F2F2;
+	background-position: 0 7px;
+	padding-left: 15px;
+}
+.menu_level_2 a:hover, .menu_level_2 .active {
+	background-color: #F2F2F2;
+	background-position: 1px 7px;
+	padding-left: 15px;
+}
+.menu_level_3 a:hover, .menu_level_3 .active {
+	background-color: #F2F2F2;
+	background-position: 1px 7px;
+	padding-left: 15px;
+}
+.menu_level_4 a:hover, .menu_level_4 .active {
+	background-color: #F2F2F2;
+	background-position: 1px 7px;
+	padding-left: 15px;
+}
+.menu_level_2 a {
+	border-left: 10px solid #F2F2F2;
+	color: #666666;
+	font-size: 11px;
+	padding: 4px 4px 4px 15px;
+}
+.menu_level_3 a {
+	border-left: 25px solid #F2F2F2;
+	color: #666666;
+	font-size: 11px;
+	padding: 4px 4px 4px 15px;
+}
+.menu_level_4 a {
+	border-left: 40px solid #F2F2F2;
+	color: #666666;
+	font-size: 11px;
+	padding: 4px 4px 4px 15px;
+}
+.menu_level_2 + .menu_level_1 a {
+	margin-top: 20px;
+}
+
+.menu_selected {
+	font-weight:bold;
+	color: #000000;
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+.footer a {
+	color:#FFFFFF;
+}
+
+
+
+/* Tabs Menü Startseite */
+
+ul#Navigation {
+	text-align: left;
+	background-image:url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/subnav_bg.png');
+	background-repeat:no-repeat;
+	height: 32px;
+	margin-top: 3px;
+	margin-right:30px;
+	padding-left: 3px;
+  }
+  ul#Navigation li {
+	list-style: none;
+	font-size:14px;
+	letter-spacing:1px;
+	line-height:30px;
+	margin-left: 5px;
+	margin-right: 30px;
+	display: inline;
+  }
+
+  ul#Navigation a, ul#Navigation span {
+	text-decoration: none; 
+	color: #4D4F53; 
+  }
+
+  ul#Navigation a:hover, ul#Navigation span {
+	color: #46ac59; 
+  }
+  
+	ul#Navigation a:visited, ul#Navigation span {
+	color: #4D4F53; 
+  }
+  
+	ul#Navigation a:active, ul#Navigation span {
+	color: #46ac59; 
+  }
+  
+	ul#Navigation a:focus, ul#Navigation span {
+	color: #46ac59; 
+  }
+  
+  ul#Navigation_p li.tab_selected {
+	 background-image:url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/bg_selected.png');
+	 background-repeat:repeat-x;
+	 width:100%;
+	 height:28px;
+	}
+	
+ul#Navigation li.tab_selected { 
+	 background-image:url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/bg_selected.png');
+	 background-repeat:repeat-x;
+		 width:100%;
+	 height:28px;
+	}
+	
+	#Navigation.tab_selected{
+		color: #46ac59; 
+	}
+  
+  /* Tabs Menü Produktseite */
+
+ul#Navigation_p {
+	text-align: left;
+	background-image:url('http://dufte-berliner.rakuten-shop.de/home/1caaaec3f24a9ff7b5c89b0ecca93ca6/uploads/subnav_p_bg.png');
+	background-repeat:no-repeat;
+	height: 32px;
+	padding-left: 3px;
+  }
+  
+  ul#Navigation_p li {
+	list-style: none;
+	font-size:14px;
+	letter-spacing:1px;
+	line-height:30px;
+	margin-left: 75px;
+	display: inline;
+  }
+
+  ul#Navigation_p a, ul#Navigation_p span {
+	text-decoration: none; 
+	color: #4D4F53; 
+  }
+
+  ul#Navigation_p a:hover, ul#Navigation span {
+	color: #46ac59; 
+  }
+  
+	ul#Navigation_p a:visited, ul#Navigation span {
+	color: #4D4F53; 
+  }
+  
+	ul#Navigation_p a:active, ul#Navigation span {
+	color: #46ac59; 
+  }
+  
+	ul#Navigation_p a:focus, ul#Navigation span {
+	color: #46ac59; 
+  }
+  
+  /* Frameslider */
+  
+  #jq_fmslideshow {
+	width:599px;
+	height:306px;;
+  }
+
+  
+  #Produktinformationen {
+	font-family:'trebuchet ms', helvetica, sans-serif;
+	font-size:14px;
+	width: 555px;
+	height:1200px;
+  }
+  
+  #Herstellerinformationen {
+		width: 550px;
+		height:auto;
+  }
+  
+  #Versandinformationen {
+		width: 555px;
+		height:750px;
+  }
+  
+  #newsletter {
+	width:599px;
+	height:auto;
+  }
+  
+  #Willkommen {
+	margin-left:9px;
+	min-height:350px;
+  }
+  
+  #UnsereHersteller {
+	margin-left:9px;
+	min-height:350px;
+  }
+  
+  #DufteBlog {
+	margin-left:9px;
+	min-height:350px;
+  }
+
+/* facebook fan box */
+
+.fb-container {
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	width: 186px;
+	height: 338px;
+	overflow: hidden;
+}
+
+.fb-container > div {
+	 margin: -1px 0px 0px -1px;  
+}
+
+
+
+#jq_fmslideshow #fmslideshow .txtLarge{font-size:1.5em; color:#FFF; display:inline-block; padding-left:12px; padding-right:12px; padding-top:0px; padding-bottom:4px}
+
+#jq_fmslideshow #fmslideshow .txtMedium{font-size:1.6em; color:#FFF; display:inline-block; padding-top:3px; padding-bottom:3px; padding-left:9px; padding-right:9px}
+
+#jq_fmslideshow #fmslideshow .txtMedium2{font-family:ColabReg,Georgia,"Times New Roman"; font-size:1.6em; color:#FFF; display:inline-block; padding:5px; padding-left:7px; padding-right:7px; background-color:}
+
+#jq_fmslideshow #fmslideshow .txtExMedium{font-size:1.3em; color:#000; display:inline-block; padding-top:5px; padding-left:8px; padding-right:5px; padding-bottom:7px}
+
+#jq_fmslideshow #fmslideshow .txtNormal{font-family:ColabReg,Tahoma,"Times New Roman"; font-size:13px; color:#000; display:inline-block; padding:5px}
+
+#jq_fmslideshow #fmslideshow .txtExNormal{font-family:ColabReg,Georgia,"Times New Roman"; font-size:14px; color:#000; display:inline-block; padding:5px}
+
+#jq_fmslideshow #fmslideshow .txtSmall{font-family:ColabReg,Arial,"Times New Roman"; font-size:12px; line-height:14px; color:#000; display:inline-block; padding:5px}
+
+#jq_fmslideshow #fmslideshow .textBg{opacity:.7; filter:alpha(opacity=70)}
+
+#jq_fmslideshow #fmslideshow a{font-family:ColabReg,Tahoma,"Times New Roman"; display:inline-block; text-decoration:none; color:#FFF}
+
+#jq_fmslideshow #fmslideshow a:link{color:#FFF}
+#jq_fmslideshow #fmslideshow a:visited{color:#FFF}
+#jq_fmslideshow #fmslideshow a:active{color:#FFF}
+#jq_fmslideshow #fmslideshow a:hover{color:#aaa}
+
+#jq_fmslideshow #fmslideshow .divStyle{font-family:"OswaldRegular",Georgia,sans-serif}
+
+#jq_fmslideshow .buttonText{font-family:ColabReg,Arial,"Times New Roman"; font-size:11px; line-height:12px; color:#000; display:inline-block; vertical-align:middle; text-align:center}
+
+.fm_drag-cursor{cursor:move}
+.fm_drag-cursor{cursor:url("../theme/images/cursors/openhand.png") 8 8,-moz-grab}
+.fm_drag-cursor{*cursor:url(../theme/images/cursors/openhand.cur)}
+.fm_drag-cursor{cursor:url(theme//cursors/openhand.cur)}
+
+.fm_draging-cursor{cursor:move}
+.fm_draging-cursor{cursor:url("../theme/images/cursors/closedhand.png") 8 8,-moz-grabbing}
+.fm_draging-cursor{*cursor:url(../theme/images/cursors/closedhand.cur)}
+.fm_draging-cursor{cursor:url(theme//cursors/closedhand.cur)}
+
+ 
+#jq_fmslideshow .thumb-Holder{width:100%;  -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -o-user-select:none; user-select:none}
+
+#jq_fmslideshow .thumb{width:120px;  height:60px;  padding:2px;  margin-right:6px}
+
+#jq_fmslideshow .thumb .bg{background-color:#B4B4B4}
+
+#jq_fmslideshow .thumb-normal{background-color:#fff}
+
+#jq_fmslideshow .thumb-over{background-color:#000}
+
+#jq_fmslideshow .thumb .tint-normal{background-image:none; !important  }
+
+#jq_fmslideshow .thumb .tint-over{background-image:url(../theme/images/thumb_over.png);  background-position:center}
+
+#jq_fmslideshow .thumb-next-previous-normal{opacity:1; !important filter:alpha(opacity=100); !important}
+
+#jq_fmslideshow .thumb-next-previous-over{opacity:.5; !important filter:alpha(opacity=50); !important}
+
+#jq_fmslideshow{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+
+#jq_fmslideshow .nonDraggable{cursor:auto}
+
+#slideShow {
+position: relative;
+}

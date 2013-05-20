@@ -1,0 +1,426 @@
+﻿<script type="text/javascript">
+			CloudZoom.quickStart();
+		</script>  
+
+<div id="column_middle_2">
+<!-- Produktbilder -->
+<div class="box_product_mid">
+<!-- Create a Cloud Zoom in the usual way. -->
+	<a rel="position: 'inside'" href="{product.images.original.1.url}" class="cloud-zoom" id='zoom1' title="{product.producer_name}" >
+<img src="{product.images.original.1.url}" style="width:auto; height:300px;" data-cloudzoom = "zoomPosition:'inside'"  alt="" />
+</a>
+	  
+	 <div class="clear"></div>
+	 
+	 	  <div id="product-images" data-hook="product_images">
+		<div id="main-image" data-hook>
+		  <%= render :partial => 'image' %>
+		</div>
+		<div id="thumbnails" data-hook>
+		  <%= render :partial => 'thumbnails' %>
+		</div>
+	  </div>
+
+		<div style="position:absolute;top: 564px;"></div>
+</div> <!-- box_product_mid -->
+
+
+<div class="box_product_midr">
+<h1><%= accurate_title %></h1><br /><br />
+
+<form name="order" action="{form.order.action}" method="post" />
+
+<b>Bitte wähle deine Variante:</b><br />
+  
+ 
+<table width="200" border="0">
+   <tr>
+		<td>:</td>
+		<td></td>
+	</tr>
+</table>
+
+		 <b>			<strike class="strike"></strike><br />
+				<span class="price_ps"></span> &nbsp; &nbsp;<font size="-1" color="#666666"></font><br />
+				
+				<span class="price_ps"></span><br />
+				<br />
+				
+</b>
+
+		
+		<strong>Inhalt</strong>
+			
+						<br />
+						<span class="small_grey">()</span>
+						
+					<br /><span class="price_ps"></span><br />
+										<br /><strike class="strike"></strike> <span class="small">()</span>
+		<br />
+		 <br /><!--  Lieferzeit -->
+
+<span class="light_grey" style="font-weight: normal;"><br />. <br />Keine Ausweisung der MwSt. nach §19 UStG.</span>
+	<br />
+   <div style="vertical-align: middle;"> 
+   				<div id="cart-form" data-hook="cart_form">
+		  <%= render :partial => 'cart_form' %>
+		</div>
+   </div>
+
+
+</form>
+</div> <!-- end div produkt order-->
+
+</div> <!-- end div middle -->
+
+<div class="clear"></div>
+
+  <!-- <div class="spacer_f"></div> -->
+<div class="tabs_holder" style="width:570px;float:left;">
+ <ul id="Navigation_p">
+	<li class="tab_selected"><a href="#Produktinformationen">Story</a></li>
+	<li><a href="#Herstellerinformationen">Herstellerinfo</a></li>
+	<li><a href="#Versandinformationen">Versandinfo</a></li>
+ </ul>
+ <div class="content_holder" style="width:562px;float:left;padding-left:8px;">
+ 
+  <div id="Produktinformationen">
+		<%= product_description(@product) rescue t(:product_has_no_description) %> 
+	<!-- /produkt beschreibung -->
+  </div>
+  <div class="content_holder" style="width:562px;float:left;padding-left:8px;">
+  <div id="Herstellerinformationen" align="justify">
+  <% products.each do |product| %>
+  <%= if product.name == "Tote" =%>
+  	RUBY TOTE
+  <% end %>
+			{% if {product.producer} == "Almano" %}
+		<h1>Almano bei Dufte Berliner Produkte</h1><br /><br />
+		<p>Sie suchen Lederwaren & Accessoires aus Rindsleder? Dann sind Sie in unserem Berliner Shop genau richtig. Almano fertigt hochwertige und exklusive Lederprodukte in Berlin Design bereits seit den 90er Jahren. Qualität und deren Kontrolle stehen hier, im Herzen Berlins, ganz oben. Dank des geschmackvollen und zeitlosen Designs sorgt Almano immer für einen Hingucker, diese verbinden Tradition mit Individualität – alles für was Dufte Berliner Produkte steht. 
+<br /><br />
+Dircksenstraße 99<br />
+10178 Berlin
+		</p>
+		<div style="width:1px;height:550px;"></div>
+		{% endif %}
+		
+				{% if {product.producer} == "Ampelmann" %}
+		 <h1>Die Hälfte aller Ampelmännchen kommen aus dem Osten</h1><br /><br />
+		 <img src="uploads/am_logo.png" alt="Ampelmann Logo" /><br /><br />
+		 <p>
+		 Als die Mauer fiel, sollten nicht nur sehr viele Ostbetriebe abgewickelt werden, sondern auch viele Dinge des Alltags, wie Symbole, Schilder oder Straßennamen mussten verschwinden. Das Ampelmännchen gehörte ebenfalls dazu.<br /><br />
+
+Die Idee, aus den freundlichen Wichten Designprodukte herzustellen und sie damit wieder salonfähig zu machen war 1996 ein wichtiger Meilenstein zur Rettung der ostdeutschen Ampelmännchen. Die Ampelmännchen hielt Einzug in die Medien und unzählige Sympathiebekundungen aus aller Welt sowie das Engagement vieler Ostdeutscher trug schließlich dazu bei, dass die Politik einlenkte ­ und die Ampelmännchen weiterhin ihren Job tun durften.<br /><br />
+
+Gleichzeitig wurden sie zum Firmenlabel und kreativen Schaffenszentrum des Designers Markus Heckhausen. Immer neue Produktideen entstanden, die Nachfrage stieg und auch das Familienunternehmen wuchs langsam aber stetig.<br /><br />
+
+Mittlerweile umfasst die Kollektion der Ampelmann GmbH 500 Produkte ­ und die Ideen sprudeln immer weiter.Das Unternehmen hat sich auch zur Aufgabe gemacht, ostdeutsche Betriebe zu beauftragen. Bereits das erste Ampelmann-Produkt - die Lampe, mit der 1996 alles anfing - wurde im Osten gefertigt. Seither versuchen die Ampelmänner, wenn möglich im Osten Deutschlands oder zumindest im Land zu produzieren. Sogar die Kunststoffproduktion wurde von China wieder zurück nach Thüringen verlegt.<br /><br />
+
+Seitdem werden die Reflektoren, die Buchstützen oder die Rosenkavaliers-Vasen in Ostdeutschland hergestellt, dem Geburtsland der Ampelmännchen. Die neue Babykollektion ist ein weiteres Beispiel dafür, dass die Firmenphilosophie sich sehr wohl mit Wirtschaftlichkeit verträgt, denn auch die Strampler, Jumper und Lätzchen werden im Osten, in Burkardtsdorf bei Chemnitz, gefertigt.<br /><br />
+
+Die Ideen für die Ampelmannprodukte sind phantasievoll und erfordern oft eine unkonventionelle Herangehensweise an Produktionsabläufe ­ die Motivation, immer wieder Neues auszuprobieren findet das Unternehmen in den kleinen und mittelständischen Betrieben der neuen Bundesländer. So ist es nicht zuletzt auch die gute Ausbildung der Fachkräfte im Osten, die zu dem hohen Qualitäts-Niveau der Ampelmannprodukte mit beiträgt. <br /><br />
+
+<strong>Also - warum in die Ferne schweifen, sieh das Gute liegt so nah...</strong>
+ </p>
+		 <div style="width:1px;height:750px;"></div>
+		{% endif %}
+		
+				{% if {product.producer} == "Asabi" %}
+		 <h1>Firmenstory</h1><br /><br />
+		 <p>
+			Mit Freude gestalten wir, seit nun schon 12 Jahren Schmuck aus allen erdenklichen Materialien,
+die wir Weltweit beziehen. Angeregt durch Kunden und Modetrends
+gehen die Gestaltungsideen nie zu Ende.<br /><br />
+
+Unser umfangreiches Programm bietet für jeden Geschmack immer
+etwas besonderes.<br /><br />
+
+Großen Spaß haben wir an der unendlichen Vielzahl  von Perlen in Farbe, Form und Herkunft
+ Wir genießen die positiven Rückmeldungen unserer zufriedenen Kunden und passen uns jederzeit ihren Wünschen an.<br /><br />
+
+		 </p>
+		 <div style="width:1px;height:750px;"></div>
+		{% endif %}
+		
+		{% if {product.producer} == "b-ensemble" %}
+		 <h1>b-ensemble</h1>
+		 <div style="width:1px;height:750px;"></div>
+		{% endif %}
+		
+				{% if {product.producer} == "KaWe Design" %}
+		 <h1>b-ensemble</h1>
+		 <div style="width:1px;height:750px;"></div>
+		{% endif %}
+		
+			{% if {product.producer} == "Glaube & Wahrheit" %}
+		 <h1>Glaube &amp; Wahrheit</h1><br /><br />
+		 <img src="uploads/guw_bild_herstellertext.jpg" alt="Glaube-und-Wahrheit Logo"  /><br /><br />
+		 <p>
+		 Während Ihres Modedesignstudiums an der  FHTW Berlin lag es für Nicole von Glaube & Wahrheit ganz nahe, dass Sie mit Ihrem Label „Glaube und Wahrheit“ mehr als nur Mode schaffen wollte. Ihr geht es zusätzlich um Nachhaltigkeit und Beständigkeit in der Verwirklichung Ihrer Ideen.<br /><br />
+
+Die Produkte werden aus handverlesenen Stoffen gefertigt, die vom Look her aus Mamas oder Omas Wäscheschrank stammen könnten und mit ihren Mustern jeden von uns in seine Kindheit zurückversetzen.<br /><br />  
+
+Glaube & Wahrheit macht es einfach wahnsinnig viel Freude die Tierchen, Kleider und Möbel zum Leben zu erwecken, und  wir sind davon überzeugt, dass jedes Ihrer Produkte dieses Stück Herzensfreude mit eingearbeitet bekommt und dies dann auch ausstrahlt und an seine Umgebung weitergibt. In Ihrer wild zusammengewürfelten Truppe von Tieren verschiedenster Art, soll jeder dass für sich passende finden. <br /><br />
+
+Wir stellen alle unsere Produkte in aufwendiger Handarbeit her. Alle Produkte werden selbst genäht, wobei besonders auf eine hochwertige Verarbeitung und die Pflegeeigenschaften geachtet wird.<br /><br />
+
+Das Füllmaterial besteht zu 100% aus hochwertiger, antiallergener Polyesterwatte.<br />
+Unsere Produkte sind bei 40°  waschbar.<br /></p>
+		 <div style="width:1px;height:750px;"></div>
+		{% endif %}
+		
+				{% if {product.producer} == "SupaRina" %}
+		 <h1>SupaRina</h1><br /><br />
+		 <img src="uploads/sr_logo.jpg" alt="SupaRina Logo"  /><br /><br />
+		 <p>
+		 SupaRina - das ist Marina Neumann. Seit mehr als 10 Jahren arbeitet die studierte Designerin für Kommunikation im Grafik- und Internetbereich.<br /><br />
+Viele Gestaltungsideen sind dabei entstanden und landeten wenn nicht beim Kunden, dann in der Schublade. Das Faible für Schmuck und Schmückendes und die Vorliebe für das grafische Arbeiten waren dann ausschlagebend für Gründung des Labels SupaRina.<br /><br />
+Von der Produktidee, über den Entwurf, die Entwicklung von Werbemitteln, Produktfotos, Internetseite bis hin zur Store-Gestaltung. Alles entsteht in Eigenregie und mit viel Liebe zum Detail.<br /><br />
+So auch jedes einzelne Stück der SupaRina-Kollektion. Die an Icons erinnernden Motive entstehen zwar am Computer, trotzdem steckt in jedem einzelnen viel Herzblut und Fingerspitzengefühl. Jedes Stück der Kollektion ist einzigartig und von hoher Symbolkraft. Besonders beliebt sind der großkalibrige Revolver, der coole Roboter, die neongrüne Kassette oder der kultige Fernsehturm.<br /><br />
+Neu im Sortiment sind seit einiger Zeit Wanduhren, Mobilés und Untersetzer. Jedes Stück ein echtes SupaRina-Design und natürlich aus Plexiglas. Die SupaRina-Grafiken finden sich außerdem wieder auf Windlichtern, T-Shirts, Buttons und Wallstickern.<br /><br />
+
+<strong>SupaRina - Der Laden</strong><br /><br />
+
+In Ihrem Laden kannst Du alle SupaRina-Produkte ansehen, testen und natürlich kaufen. Sie kann vor Ort Anpassungen vornehmen oder Bestellungen aufnehmen:<br /><br />
+
+Niederbarnimstraße 6<br />
+10247 Berlin-Friedrichshain<br /><br />
+
+Mo bis Fr 13-18 Uhr
+		 </p>
+ <div style="width:1px;height:750px;"></div>
+		{% endif %}
+		
+		{% if {product.producer} == "muster" %}
+		 <h1>b-ensemble</h1>
+		 <div style="width:1px;height:750px;"></div>
+		{% endif %}
+		
+		{% if {product.producer} == "Conexion - Berlin" %}
+			<h1>Herzlich Willkommen bei CONEXION-BERLIN!</h1><br /><br />
+			<p>Ein bisschen mehr Sonne in den Alltag der Berliner zu bringen und der Hauptstadt einen Hauch des lateinamerikanischen Lebensgefühls zu vermitteln war vor gut fünf Jahren der Antrieb des Inhabers und Geschäftsführers Raul. Inzwischen hat sich CONEXION an die Stadt angepasst ohne sein anfängliches Urlaubsflair zu verlieren. <br /><br />
+Exotischer Naturschmuck und edle Silberstücke zeigen sich neben trendigem Piercingschmuck, originellen Taschen und selbst entworfenen T-Shirts. CONEXION hat sich weiterentwickelt und ist inzwischen zur Anlaufstelle für Designer, Tätowierer, Künstler und Musiker aus aller Welt geworden. <br /><br />
+Die beiden Tattoo-und Piercingstudios mit ihren lebenslustigen und kompetenten Künstlern räumen mit dem dunklen Image der Szene auf.  „CONEXION“  (zu deutsch: Verbindung) ist ein Wort, welches  gerade in einer  internationalen und vielseitigen Stadt wie Berlin eine wichtige Bedeutung erhält. <br /><br />
+
+<h1>TASCHENKOLLEKTION.</h1><br /><br />
+Groß, klein, ausgefallen, elegant, verspielt... Die Taschenkollektion von CONEXION ist so vielseitig wie die Berliner selbst. Dabei achten wir hier vor allem auf die Qualität der Produkte, denn wir wissen: Die Tasche ist ein ständiger Begleiter und muss so einiges aushalten können. Kommen Sie vorbei, Ihre Lieblingstasche wartet schon auf Sie!<br /><br />
+
+<h1>BODY PIERCING.</h1><br /><br />
+Angefangen bei einfachen Ohrsteckern, über traditionelle Piercings, bis hin zu ausgefallenem Körperschmuck ist CONEXION immer auf dem neuesten Stand. Expansoren, Tunnels und Plugs aus Chirurgenstahl, Naturmaterialen oder Acryl finden Sie bei uns in allen Farben und Formen. Und wenn es ein neues Piercing sein soll, sind Sie bei uns in den besten Händen. Unsere Piercer sind professionell ausgebildet und arbeiten nach strengen, hygienischen Richtlinien.<br /><br />
+
+<h1>T-SHIRT-KOLLEKTION.</h1><br /><br />
+CONEXION arbeitet mit talentierten internationalen Designern zusammen um ständig neue und originelle Motive zu entwerfen. Auch hier liegt uns sowohl das Aussehen, wie auch die Qualität der Produkte am Herzen: Designerware zum Wohlfühlen!<br /><br />
+
+
+<h1>Ladengeschäft:</h1><br /><br />
+
+Conexion I Schönhauser Allee 54, Prenzlauer Berg<br />
+Conexion II Schönhauser Allee 104, Prenzlauer Berg
+</p>
+<div style="width:1px;height:550px;"></div>
+
+
+		{% endif %}
+		
+		{% if {product.producer} == "Core Tex Kreuzberg" %}
+			<h1>Core Tex bei Dufte Berliner Produkte</h1><br /><br />
+			<p>
+			Core Tex – Home of Hardcore and Punk – ist ein altbekannter Plattenladen im Herzen Kreuzbergs. <br /><br />
+Hier lässt sich allerlei Musik und Merchandise aus der Punk-Hardcore-Szene finden. Der Laden öffnete 1988 seine Türen und ist seit nun mehr als 25 Jahren (Geburtstag YippiieYeah) zum Treffpunkt und Zuhause für die Punk-Hardcore-Untergrund-Gemeinschaft geworden. Von alt eingesessenen Stammkunden, bis hin zu den Hardcore-Kids aus der Umgebung. <br /><br />
+Unzählige Bands spielten Shows in oder vor dem Laden - unter Anderem Troopers, The Unseen, Anti-Flag, Chuck Ragan, Gorilla Biscuits, Kill Your Idols, Anticops, Danny Diablo, Born From Pain, Radio Dead Ones, Final Prayer und viele mehr. So wurde Core Tex über die Jahrzehnte auch zum Treffpunkt und Anlaufstation für viele Bands, die gern einmal auf ein Bier vorbei schauen, oder sich einfach nur bei dem Core Tex Team und den Fans sehen zu lassen. <br /><br />
+Core Tex überzeugt seine Anhänger vor allem durch seinen freundlichen und szeneaffinen Service, egal ob man als Szeneeinsteiger, Urgestein, Sammler oder Passant in den Berlin Shop kommt. Die einzigen die hier keinen Zutritt haben sind...naja ihr wißt es alle!<br /><br />
+Aber Core Tex ist nicht nur ein Laden, nein im Jahr 1994 wurden auch noch eigene Musik Labels gegründet und bereits mehr als 100 Alben und EPs heraus gebracht. Hier wurden Titel kleinerer lokaler Bands, bis hin zu größeren, die sich tausende Male verkauft haben, produziert. Manche sind mittlerweile richtige Raritäten. <br /><br />
+
+Ladengeschäft:<br />
+Oranienstraße 3<br />
+10997 Kreuzberg
+<img src="uploads/logo_coretex.jpg" />
+			</p>
+			<div style="width:1px;height:250px;"></div>
+		{% endif %}
+		
+		{% if {product.producer} == "Formfjord" %}
+			<h1>&raquo; Formfjord is a design studio for product design,
+development and engineering. &laquo;
+</h1><br /><br />
+
+<img src="uploads/ff_logo.png" alt="Formfjord Logo" /><br /><br />
+
+<p>
+Fabian Baumann (*1977) ist Diplom Ingenieur für Maschinenbau und Designer. Er hat an der TU-Berlin Maschinenbau und an der TU-Delft in den Niederlanden Industriedesign studiert.<br /><br /> 
+
+Sönke Hoof (*1972) ist Diplom Designer. Nach einer Lehre zum Polsterer hat er an der Kunsthochschule Weissensee studiert.<br /><br /> 
+
+Seit 2006 führen Sie gemeinsam das Designstudio Formfjord und entwickeln Produkte im Auftrag namhafter deutscher und internationaler Kunden. Als Team von Designern und Ingenieuren nutzen Sie Ihre unterschiedlichen Perspektiven um Ihren kreativen Prozess zu beschleunigen. So entwickeln Sie Produkte, die funktionieren – technologisch und ökologisch, ergonomisch und emotional, strategisch und ökonomisch.<br /><br />
+
+Dieses Ziel verfolgen Sie, indem Sie Marktlücken für Innovationen suchen und Produktideen entwickeln, die zum Markt und zu Ihren Partnern passen. Sie schätzen jedes einzelne Projekt für seine speziellen Herausforderungen – vom Kerzenständer zur Miettoilette, ?von der Türklinke zum Lichtkonzept. <br /><br />
+
+Jedes Projekt bietet Inspiration für ein anderes. Je unterschiedlicher die Aufgaben, desto unerwarteter sind die Synergien
+</p>
+			<div style="width:1px;height:750px;"></div>
+		{% endif %}
+			 
+		{% if {product.producer} == "Olze & Wilkens" %}
+			<h1>OLZE & WILKENS</h1><br /><br />
+			<p>
+			Olze & Wilkens sind die Designer unserer wunderbaren Frühstücksbrettchen, Schneidbretter und Pizzabretter. Mit viel Liebe zum Detail und zum Produkt an sich verzaubern Sie uns seit dem ersten Tag.<br /><br /> 
+Zwischen 2004 und 2008 arbeiteten sie sehr erfolgreich als Designteam zusammen, nahmen an zahlreichen Messen und Ausstellungen teil und arbeiteten in den Bereichen Produkt- und Grafikdesign. Seit 2008 widmen sich Karen Olze und Gisa Wilkens ihren eigenen Designbüros.<br /><br />
+Karen Olze absolvierte zuerst eine Tischlerlehre und arbeitete danach noch 1 Jahr als Tischlerin. Von 1998 bis 2003 studierte sie Industrial Design an der UdK Berlin.<br /><br />
+Gisa Wilkens studierte zuerst Psychologie und machte 1998 ihren Abschluß als Diplom-Psychologin. Anschließend studierte sie Industrial Design an der Hochschule für Kunst und Design in Halle, Burg Giebichenstein. Sie wechselte dann 2000 an die UdK Berlin und machte da 2003 ihren Abschluss.
+</p><div style="width:1px;height:550px;"></div>
+		{% endif %}
+		
+		{% if {product.producer} == "Pension für Produkte" %}
+			<h1>Pension f&uuml;r Produkte</h1>
+		{% endif %}
+		
+		{% if {product.producer} == "Schmusigeräte" %}
+			<h1>Schmusiger&auml;te</h1>
+			<div style="width:1px;height:750px;"></div>
+		{% endif %}
+		
+		{% if {product.producer} == "Silberfischer" %}
+			<h1>Silberfischer Design made in Berlin</h1><br /><br />
+			<p>
+			Das Label Silberfischer wurde im August 2004 in Kombination mit einem eigenen Online Shop gegründet. Alles begann mit dem Kauf einer Computerstickmaschine und dem Ziel städtische Stickereien zu designen. Hierbei ließen sich die beiden Berliner Gründer  Elke, eine Kommunikationsdesignerin und André ein Programmierer, nicht durch ungewöhnliche Materialien, wie Staubtücher, abschrecken. Erstes Berlin Design entstand in Form von Pixelgrafikmotiven, wie Ghettoblaster und Systembomben. Die Liebe zum Design erkennt man vor allem an Besonderheiten und kleinen versteckten Details, wie zum Beispiel die Verwendung leuchtender Garne. Es dauerte über 2 Jahre bis das Label Silberfischer den ersten stationären Laden im Dezember 2006 in Berlin eröffnete und seitdem hält ihr Erfolg an.  Damals wurden Motive noch durch Kreuzstich genäht, mittlerweile werden jedoch auch grafische und typografische Motive mithilfe des Siebdruckes auf die Textilien gebracht. <br /><br />
+			Dufte Berliner Produkte liebt natürlich die Liebe zum Handwerk, dem Grafikdesign und die Qualität der verwendeten Materialien. Das Label Silberfischer achtet auf die Verwendung von fair trade und sweatshop-frei gehandelten Materialen und überzeugt durch seine humorvollen Designs. Auf dieser Berliner Kleidung verstecken sich oftmals Nachrichten, welche man nur bei genauerem Hinsehen erkennt. Inspiriert werden die beiden Designer dabei vor allem durch den abwechslungsreichen Berliner Alltag. Ihre Designs gehen mittlerweile um die ganze Welt und sind in Ländern wie Frankreich, Holland, Spanien oder Amerika zu sehen.<br /><br />
+			<img src="logo_silberfischer.jpg" alt="Logo Silberfischer" /><br /><br />
+			Ladengeschäft<br />
+SILBERFISCHER’s HOMESHOP!<br />
+Oderberger Straße 23<br />
+10435 Berlin<br /><br />
+<iframe width="420" height="315" src="http://www.youtube.com/embed/rcTGFfP16_s" frameborder="0" allowfullscreen></iframe>
+			</p>
+			<div style="width:1px;height:250px;"></div>
+		{% endif %}
+		
+		{% if {product.producer} == "texstilo" %}
+			<h1>Texstilo bei Dufte Berliner Produkte</h1><br /><br />
+			<p>
+			Sie sind Liebhaber ausgefallener Accessoires und Schals? Dann werden Sie texstilo lieben! Texstilo ist ein kleines Berliner Label, welches im Herzen Berlin, genauer Prenzlauer Berg, alles selbst entwirft und dort auch herstellt. 2008 begann die Reise durch das Berlin Design. Die Designerin ist Kleinunternehmerin mit Leib und Seele. Die Idee das Laben zu gründen, entstand aus der Unzufriedenheit über die Entwicklung der Textilindustrie. Aus Abneigung durch Produktionen in Billiglohnländern, deren Arbeitsbedingungen, wie Kinderarbeit und minderwertige Qualität wurde das Label Texstilo geboren. Diese Ansicht teilt das Label mit Dufte Berliner Produkte. Bei Texstilo steht Qualität von Material, sowie das Design im Vordergrund – und trotzdem bleibt es bezahlbar! Leidenschaft und Herzblut für das Handwerk müssen einfach überzeugen.
+			</p>
+			  <div style="width:1px;height:510px;"></div>
+		{% endif %}
+		
+		{% if {product.producer} == "Yackfou" %}
+			<h1>Yackfou in unserem Berliner Shop</h1><br /><br />
+			<p>
+			Bei Yackfou handelt es sich um zwei Berliner Grafiker, welche allein schon sehr viel Humor mit ihrem Namen zeigen. Wenn es Ihnen bisher noch nicht aufgefallen ist, bei dem Namen handelt es sich um ein Anagramm der beiden nicht ganz so netten Wörter „Fuck you“. Yackfou widmet sich dem Erscheinungsbild von T-Shirts als grafisches Medium. Kreativität ist wohl das größte Markenzeichen des Labels. Dieses verzichtet sogar auf ein einheitliches Logo, weil dieses wohl zu langweilig wäre. Die beiden Berliner Designer behaupten von sich selbst, dass sie eigentlich keine Ahnung von Grafikdesign haben und dort nur hereingerutscht sind. Das Shirt bildet hier nur die Plattform für grafische Experimente und diese können sich sehen lassen! Einzigartig, aufregend und kreativ sind nur wohl nur einige Wörter, die dieses tragbare Grafikdesign beschreiben würden. Das Label produziert aus Liebe zum Handwerk. Wirtschaftliche Überlegungen kommen für diese immer erst an zweiter Stelle. Das Büro dieses besonderen Berlin Designs ist natürlich auch in unserer geliebten Hauptstadt und fungiert als Entwicklungslabor neuer einzigartiger Designs. <br /><br />
+			<h2>Die Geschichte des Labels</h2><br /><br />
+			Der Beginn der Marke Yackfou begann wohl im Jahre 2003 mit dem Kennenlernen der beiden Berliner Designer Tobias Hermann und Martin Krusche. Diese lernten sich bei ihrem Kommunikationsdesignstudium in Berlin kennen. Die Entscheidung, ein eigenes Label zu gründen, ist unter anderem auf eine ordentliche Portion Schnaps und die Eindrücke eines Festivals zurück zu führen. Die ersten Hoodies wurden in der Universitäts-internen Druckerei in einem Keller per Hand bedruckt und nur auf dem Boxhagener Flohmarkt verkauft. Ab da an steigerten sich die Erfolge des Labes enorm bis hin in den Berliner Shop von Dufte Berliner Produkte. Yackfou steht für Grafiken und Illustrationen auf textilem Untergrund und absolute Autonomie, sei es durch finanzielle Unabhängigkeit oder einfach nur die Verwirklichung der eigenen Ideen und Experimente – und das alles bis heute! 2008 eröffneten die beiden Berliner Designer ihren ersten Shop in Berlin Friedrichshain. Mittlerweile sind die Designs der beiden in mehr als 100 Läden in ganz Europa erhältlich und natürlich auch bei Dufte-Berliner-Produkte.de. Somit hat sich das Label über die Jahre fest auf dem Grafik-Fashion-Markt etabliert und sorgt seitdem für Individualität und Qualität. <br /><br />
+			Stores<br /><br />
+YACKFOU SHOP <br />
+Lychener Straße 7<br />
+10437 Berlin<br /><br />
+YACKFOU SHOP <br />
+Gabriel-Max-Str. 21<br />
+10245 Berlin
+<br /><br />
+<iframe width="560" height="315" src="http://www.youtube.com/embed/-rRezAh5-Cs" frameborder="0" allowfullscreen></iframe>
+			</p>
+		<% end %>
+	</div>
+  </div>
+	
+	<div id="Versandinformationen">
+	<div id="infokasten" style="width:720px;float:left;height:auto;padding-left:8px;">
+		<div style="margin-bottom:24px;"><h1>VERSANDINFORMATION</h1></div><div class="clear"></div>
+		<div class="vi_logo" style="float:left;width:222px;height:auto;margin-right:10px;"><img src="uploads/logo_versandinfo.jpg" alt="Versandinfo Logo" /></div>
+		<div class="vi_text" style="float:left;width:480px;height:auto;">
+			<ul>
+				<li>
+					Zunächst einmal versuchen wir jedes von Euch bestellte Produkt so schnell wie möglich zu Euch zu 
+					befördern, komme was da wolle! :)<br /><br />
+				</li>
+				<li>
+					Bestellungen bei Dufte Berliner Produkte sind grundsätzlich versandkostenfrei innerhalb Deutschlands. Bei der Lieferung nach Österreich erheben wir eine Versandkostenpauschale von 10 €. <br /><br />
+				</li>
+				<li>
+					Eure Bestellung wird per Paket an Eure Wunschadresse geliefert. Diese Adresse muss mit der 
+					Rechnungsadresse nicht übereinstimmen. So könnt Ihr Eure Lieblingsstücke auch an Familie, Freunde 
+					oder ins Büro liefern lassen, falls Ihr tagsüber nicht zuhause seid. <br /><br />
+				</li>	
+				<li>
+					Sollte das Paket zufällig nicht zugestellt werden können - kein Problem: Es wird vom Paketdienstleister 
+					oft bei einem Nachbarn abgegeben oder zur erneuten Zustellung wieder mitgenommen. Ihr habt dann 
+					eine entsprechende Benachrichtigungskarte im Briefkasten. <br /><br />
+				</li>
+				<li>
+					Solltet Ihr gleichzeitig bei verschiedenen Designern bestellt haben, so erhaltet Ihr von jedem Designer 
+					eine separate Warensendung. <br /><br />
+				</li>
+				<li>
+					Sollte einmal etwas nicht zu Eurer Zufriedenheit sein oder habt ihr noch Fragen? Zögert nicht mit uns 
+					Kontakt über die Adresse: "kundenservice@dufte-berliner.de" aufzunehmen.
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	</div>
+  
+   
+  <div id="Kundeninbewertungen">
+	<div id="infokasten" style="width:720px;float:left;">
+   #
+   </div>
+  </div> 
+
+ </div><!-- /.content_holder -->
+</div><!-- /.tabs_holder -->
+
+
+<div class="crossselling1">   <!-- produkt cross-selling -->
+{% if {product.cross_selling} %}
+{% loop product.cross_selling limit:3 %}
+ <a href="{i.link}"><div class="product_list_1">
+  <div class="box_product2" align="center">
+	<a href="{i.link}">{i.img}</a>
+		<div align="center" class="box_producttext">{i.name}
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+		</div>
+	</div>
+<div class="box_productbtn" align="center">
+<span class="price">{i.price|money}</span>{% if {i.ref_price} %}<br /><strike class="strike">{i.ref_price|money}</strike> <span class="small">({i.ref_price_type})</span>{% endif %}
+	  <form name="produktbtn" action="{i.link}" method="post" style="display:inline">
+		<input class="btn_productlist" type="submit" value="" name="submit" />
+	  </form>
+	  </div>
+	  </div>
+</a>
+	  <div class="clear"></div>
+	{% endloop %}
+
+	{% endif %}  
+
+</div> <!-- produkt cross-selling -->
+
+<div class="clear"></div>
+ <div id="hr_breadcrumb"></div>
+
+<div class="crossselling2">
+{% if {product.cross_selling} %}  <!-- produkt cross-selling -->
+{% loop product.cross_selling limit:4 %}
+ <a href="{i.link}"> <div class="product_list_1">
+  <div class="box_product2" align="center"><a href="{i.link}">{i.img}</a><div align="center" class="box_producttext">{i.name}<div class="spacer"></div><div class="spacer"></div>
+</div>
+</div>
+<div class="box_productbtn" align="center">
+<span class="price">{i.price|money}</span>{% if {i.ref_price} %}<br /><strike class="strike">{i.ref_price|money}</strike> <span class="small">({i.ref_price_type})</span>{% endif %}
+	  <form name="produktbtn" action="{i.link}" method="post" style="display:inline">
+		<input class="btn_productlist" type="submit" value="" name="submit" />
+	  </form>
+	  </div>
+	  </div></a>
+{% endloop %}
+
+{% endif %}  <!-- produkt cross-selling -->
+</div>
+
+<div class="clear"></div>
+<div style="height:87px;"></div>
+<script type="text/javascript">
+  $('.tabs_holder').skinableTabs();
+</script>
+

@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%= I18n.locale %>">
+	
+	<head>
+		<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+		<meta http-equiv="X-UA-Compatible" content="IE=10" />
+		<meta name="p:domain_verify" content="a8e3206c0a3102758ac7c98c34431374" />
+		<meta name="google-site-verification" content="PGUxyn_je93yNOPYzixnd3idOFLxZ2W09JcL9NRqfAY" />
+		
+		<title>Dufte Berliner Produkte</title>
+		 
+		<%= stylesheet_link_tag "layout.css" %>
+		  <%= csrf_meta_tags %>
+		  <%= javascript_include_tag "application" %>
+		<!-- <%= javascript_include_tag "jquery-1.6.3.min" %> -->
+		<!-- <%= javascript_include_tag "jquery-ui.min" %> -->
+		<%= javascript_include_tag "cloud-zoom.1.0.2" %>
+		<%= javascript_include_tag "skinable_tabs.min" %>
+		<script type="text/javascript" src="http://030inside.net/slide.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+		<script type="text/javascript">
+ 			$('.tabs_holder').skinableTabs({
+ 			effect: 'basic_display',
+  			skin: 'skin1',
+  			position: 'top',
+  			skin_path: '../'
+ 			});
+		</script>
+	</head>
+	
+	<body>
+		<div id="fb-root"></div>
+		<script type="text/javascript">
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<div id="frame">
+			<div id="header" style="{% if {config.images.header_background} %}background-image:url('{config.images.header_background}'){% else %}background:{config.colors.header_background}{% endif %}">
+				<div id="logo" data-hook>
+					<table width="960" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="478" rowspan="2" valign="top">
+							  <div style="margin-left:18px;">
+								 	  <%= image_tag("logo.jpg") %>
+
+								</div></td>
+						  <td rowspan="2" width="159" align="center" valign="middle">                          </td>
+						  <td valign="top">
+							</td>
+						</tr>
+						<tr>
+							<td valign="bottom" width="336">
+								 <%= image_tag("dufte_ideen_mit_herz.jpg") %>
+								                       </td>
+					  </tr>
+					</table>
+				</div>
+			</div>
+			<!-- / header -->
+			<div id="menu_bar" data-hook>
+<%= link_to t(:home), root_path, :class => "main_menu" %>
+<a class="main_menu" target="_self" href="#">Oft Verkauft</a>
+<a class="main_menu" target="_self" href="#">Frisch Eingetroffen</a>
+<a class="main_menu" target="_self" href="#">Schnäppchen</a>
+
+		
+
+ <div style="float:right; margin-right: 4px; margin-top: 5px; width:205px;height:20px;">              
+				<div class="fb-like" data-href="https://www.facebook.com/Dufte.Berliner.Produkte" data-send="false" data-layout="button_count" data-width="75" data-show-faces="false" data-font="verdana" style="float:left;vertical-align:middle;margin-top:2px;margin-right:4px;"></div>
+<!-- Fügen Sie dieses Tag an der Stelle ein, an der die +1-Schaltfläche  erscheinen soll. -->
+<div style="width:3px;height:1px;"></div>
+<div class="g-plusone" data-size="medium" data-annotation="none" data-href="https://plus.google.com/110707736573039555438/posts"></div>
+
+<a data-pin-do="buttonFollow" href="http://pinterest.com/dufteberliner/"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" alt="Dufte Berliner Produkte Pin Button" /></a>
+
+<!-- Fügen Sie dieses Tag nach dem letzten +1-Schaltfläche-Tag ein. -->
+								<script type="text/javascript">
+									window.___gcfg = {
+										lang: 'de'
+									};
+
+									(function () {
+										var po = document.createElement('script');
+										po.type = 'text/javascript';
+										po.async = true;
+										po.src = 'https://apis.google.com/js/plusone.js';
+										var s = document.getElementsByTagName('script')[0];
+										s.parentNode.insertBefore(po, s);
+									})();
+								</script>
+				
+	 </div>           
+				</div>
+			<!-- / topnavigation -->
+			<div class="spacer_h33"></div>
+			<div class="hr_breadcrumb"></div>
+			<!-- col_left -->
+			<div id="column_left">
+			
+				<!-- Kategorien -->
+					<div class="box_body">           
+						<div class="nav_side"> 
+							<%= render :partial => 'spree/shared/taxonomies' %> <!--  Fehler ? -->
+						</div>
+					</div>
+
+						
+						<!-- Newsletter -->
+						<!-- {% if {page.controller} == "index" %} -->
+						<a href="http://www.dufte-berliner-produkte.de/s/newsletter"><div class="box_news"><%= image_tag("banner_newsletter.jpg") %></div></a>
+						<div style="width:1px;height: 25px;"></div>
+						<!-- {% else %} -->
+						<div style="width:1px;height: 180px;"></div>
+						<!-- {% endif %} -->
+						
+						<!-- Partner -->
+						  <div style="width:1px;height:15px;"></div>
+ <!-- Dufte Partner -->   
+<div class="box_body">
+ <h3>Dufte Partner</h3><br /><br />
+	 <div class="nav_side"> 
+<div class="menu_level_1"><a href="http://www.dufte-berliner-produkte.de/dufte-designer-500godz-c51565061">500GODZ</a></div>
+<div class="menu_level_1"><a href="http://www.dufte-berliner-produkte.de/dufte-designer-all-4-one-c51873946">All 4 One</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-almano-c50383126">Almano</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-ampelmann-c50383146">Ampelmann</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-asabi-c49246225">Asabi</a></div>
+<div class="menu_level_1"><a href="http://www.dufte-berliner-produkte.de/dufte-designer-batata-c51873951">Batata</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-b-ensemble-c50383121">b-ensemble</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-conexion-c50383166">Conexion - Berlin</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-core-tex-kreuzberg-c50383171">Core Tex Kreuzberg</a></div>
+<div class="menu_level_1"><a href="http://www.dufte-berliner-produkte.de/dufte-designer-formfalt-c50573716">formfalt</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-formfjord-c50383176">Formfjord</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-glaube-und-wahrheit-c50383156">Glaube &amp; Wahrheit</a></div>
+<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-holzspielzeug-pfeiffer-c51714291">Holzspielzeug Pfeiffer</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-k-w-d-c50383116">K.W.D.</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-olze-und-wilkens-c50383141">Olze &amp; Wilkens</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-schmusigeraete-c50383181">Schmusiger&auml;te</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-silberfischer-c50383186">Silberfischer</a></div>
+ <div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-stil-vor-talent-c51873961">Stil vor Talent</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-suparina-c50383136">SupaRina</a></div>
+		<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-s-wert-design-c50383161">S.Wert Design</a></div>        
+<div class="menu_level_1"><a href="http://dufte-berliner.rakuten-shop.de/dufte-designer-texstilo-c50383151">texstilo</a></div>
+	 </div>
+</div>
+ 
+ <div style="width:1px;height:50px;"></div>
+<div align="center">
+
+<%= image_tag("eccash.png", :size => "50x56") %><%= image_tag("spacer.gif", :size => "34x34") %>
+<%= image_tag("trusted.png", :size => "56x56") %>
+<br /><br /><br />
+<%= image_tag("hermes.png", :size => "140x42") %>
+<br />
+<br /><br />
+<%= image_tag("paypal.png", :size => "140x49") %>
+<br />
+<br /><br />
+<%= image_tag("dhlpaket.png", :size => "140x45") %>
+<br />
+<br /><br />
+
+</div>
+				<!--		{% if {page.controller} == "index" %} -->
+						<div style="width:1px;height: 200px;"></div>
+						 <div class="banner_left_cat"><%= image_tag("seitenbanner_links.jpg") %>
+						 </div>
+						 <!-- Facebook Fanbox -->
+						 <div class="fb-container">
+<div id="bg-box" class="fb-like-box" data-href="http://www.facebook.com/dufte.berliner.produkte" data-width="188" data-height="350" data-show-faces="true" data-stream="false" data-border-color="#ffffff" data-header="false"></div>
+</div>
+						<!-- {% else %} -->
+						 <div class="banner_left_cat"><img src="uploads/seitenbanner_links.jpg" alt="" /></div>
+					<!--	 {% endif %} -->
+
+				</div>
+				<!-- / col_left -->
+
+				
+
+	<div id="content">
+		<%= yield %> <!-- verantwortlich für die inhalte -->
+	</div>
+				<div class="clear"></div>
+				
+				<div style="height:75px;"></div>
+				
+			<%= render :partial => 'spree/shared/footer' %>
+	  </div>
+			<%= render :partial => 'spree/shared/google_analytics' %>
+			
+			
+			<script type="text/javascript">
+  $('.tabs_holder').skinableTabs();
+</script>
+	</body>
+
+</html>

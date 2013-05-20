@@ -1,0 +1,89 @@
+﻿<%
+  paginated_products = @searcher.retrieve_products if params.key?(:keywords)
+  paginated_products ||= products
+%>
+
+
+<div id="column_middle">
+<img id="theimg" name="img" src="" width="748px" height="412px" alt="dufte Berliner Produkte Kategoriebanner"/>
+
+<script type="text/javascript">
+	var url = location.href;
+	var Aussage = url;
+	
+	do{
+	var recheck = lesen(url);
+	}while(recheck);
+	
+	function lesen(x){
+	var check = false;
+
+// Hauptnavigation
+var Ergebnis = Aussage.search(/ruby-on-rails.+/);
+		if (Ergebnis != -1){
+		alert("clothing");
+			document.getElementById("column_middle").getElementsByTagName("img")[0].src = "/assets/banner_hauptbanner1.jpg";
+			return check;
+		}
+
+
+	
+	}
+
+	
+</script>
+</div>
+
+<!-- end middle --> 
+<% if products.empty? %>
+  <%= t(:no_products_found) %>
+<% end %>
+
+<% if products.any? %>
+
+<div id="product_list_main">
+ 
+  <% products.each do |product| %>
+ 	 
+	 <% if product.on_display? %>
+
+	<div class="box_product_list">
+	
+		<div class="box_product" align="center">
+			<%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
+				<div align="center" class="box_producttext">
+					<%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %>
+					<div class="spacer"></div><div class="spacer"></div>
+				</div><!-- end box_producttext -->
+		<div align="center" class="box_productpreis">
+			<span class="price"><%= product.price_in(current_currency).display_price %></span> <!-- Link fehlt noch -->
+		</div> <!-- end box_productpreis -->
+	</div>
+	<div class="box_productbtn">
+	  <form name="produktbtn" action="" method="post" style="display:inline">
+		<input class="btn_productlist" type="submit" value="" name="submit" />
+	  </form>
+	</div> <!-- end box_productbtn -->
+
+<div style="width:9px;height:1px;float:left;"></div>
+
+    <% end %>
+	</div>
+  <% end %>
+  <% reset_cycle("classes") %>
+  
+  <% end %>
+
+<% if paginated_products.respond_to?(:num_pages) %>
+  <%= paginate paginated_products %>
+  <div class="clear"></div>
+<% end %>
+
+
+
+</div>
+ <!-- end aehnliche prod. -->
+<div class="clear"></div>
+<div class="spacer_f"></div>
+
+<div style="height:30px;"></div>
