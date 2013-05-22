@@ -10,6 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
-//= require_tree .
+//= require jquery-1.6.3.min
+//= require jquery-ui.min
+//= require cloud-zoom.1.0.2.min
+//= require cloud-zoom.1.0.2
+//= require skinable_tabs.min
