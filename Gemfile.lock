@@ -18,6 +18,22 @@ GIT
       savon (~> 1.2)
       spree_core (~> 1.0)
 
+GIT
+  remote: git://github.com/spree/spree_static_content.git
+  revision: 9c3015dea830dbabd1eb3d87569ff703a8a5c9e4
+  branch: 1-3-stable
+  specs:
+    spree_static_content (1.1.0.beta)
+      spree_core (~> 1.3.0)
+
+GIT
+  remote: https://github.com/jdutil/spree_contact_us
+  revision: 6a1152f02a24ac71a380f2b64d822a0c77d07953
+  branch: 1-3-stable
+  specs:
+    spree_contact_us (1.1.0)
+      spree_core (~> 1.3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -71,6 +87,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
+    bcrypt-ruby (3.0.1)
     bcrypt-ruby (3.0.1-x86-mingw32)
     builder (3.0.4)
     cancan (1.6.8)
@@ -128,6 +145,7 @@ GEM
       json
     multi_json (1.7.2)
     multi_xml (0.5.3)
+    nokogiri (1.5.9)
     nokogiri (1.5.9-x86-mingw32)
     nori (1.1.5)
     orm_adapter (0.4.0)
@@ -230,6 +248,7 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sqlite3 (1.3.7)
     sqlite3 (1.3.7-x86-mingw32)
     state_machine (1.1.2)
     stringex (1.3.3)
@@ -263,6 +282,8 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   spree (= 1.3.2)
   spree_auth_devise!
+  spree_contact_us!
   spree_gateway!
+  spree_static_content!
   sqlite3
   uglifier (>= 1.0.3)
